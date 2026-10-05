@@ -19,3 +19,8 @@ venv/
 
 # Packaged deliverables (build artifacts, not source)
 *.zip
+
+# Local report-render checks
+tmp/
+# Microsoft Office lock files
+~$*

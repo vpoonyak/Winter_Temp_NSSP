@@ -66,6 +66,14 @@ NSSP_SIGNALS = {
 }
 NSSP_MIN_EPIWEEK = 202239  # earliest week NSSP has data for
 
+# --- Delphi FluView ILI (outpatient flu-like illness) ---------------------
+# % of outpatient doctor visits for influenza-like illness, weekly, by state.
+# Same Delphi Epidata API as NSSP, but goes back much further -- used to get
+# more seasons than NSSP's 4 (flu-like illness only, no RSV/COVID split).
+
+FLUVIEW_API_URL = "https://api.delphi.cmu.edu/epidata/fluview/"
+FLUVIEW_MIN_EPIWEEK = 201040  # start of the 2010-11 season (skips the 2009 pandemic)
+
 # --- Winter temperature vs. ED-visit season -------------------------------
 
 WINTER_MONTHS = (12, 1, 2)  # Dec-Feb

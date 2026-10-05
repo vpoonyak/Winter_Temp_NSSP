@@ -1,0 +1,5 @@
+signal,n,seasons,median_peak_pct,min_peak_pct,max_peak_pct,median_peak_week
+ILI,135,15,4.304819277108433,0.384053,16.1318,17.0
+Influenza,36,4,7.045,2.83,10.16,13.0
+Rsv,36,4,1.045,0.55,2.81,13.0
+Covid,36,4,2.895,0.69,4.94,13.0
