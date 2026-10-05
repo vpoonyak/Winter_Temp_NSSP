@@ -1,9 +1,15 @@
-# Offline final-report pipeline, tested on Python 3.12.13.
-pandas==3.0.6
-numpy==2.5.3
-matplotlib==3.11.2
-pyarrow==25.0.1
-scipy==1.18.1
-epiweeks==2.4.0
-python-dotenv==1.2.4
-reportlab==5.0.1
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+seaborn>=0.13
+jupyter>=1.0
+requests>=2.31
+pyarrow>=14.0
+scipy>=1.11  # for Spearman correlation in the notebook
+epiweeks>=2.3  # CDC epiweek <-> calendar date conversion for NSSP weekly data
+python-dotenv>=1.0  # loads DELPHI_EPIDATA_KEY from .env.local automatically
+
+# Modern CMU Delphi Epidata client (not yet on PyPI, install from GitHub).
+# The old `delphi-epidata` package / Epidata.covidcast() is deprecated by
+# CMU Delphi in favor of this one.
+epidatpy @ git+https://github.com/cmu-delphi/epidatpy.git
