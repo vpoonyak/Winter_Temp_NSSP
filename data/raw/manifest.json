@@ -1,0 +1,51 @@
+{
+  "snapshot_documented": "2026-10-05",
+  "retrieval_dates": "Not recorded by original fetch scripts; no exact original retrieval date is claimed.",
+  "sources": {
+    "temperature": "https://www.ncei.noaa.gov/pub/data/cirs/climdiv/",
+    "county_names": "https://www2.census.gov/geo/docs/reference/codes/files/national_county.txt",
+    "ed_visits": "https://cmu-delphi.github.io/delphi-epidata/api/covidcast-signals/nssp.html",
+    "ili": "https://cmu-delphi.github.io/delphi-epidata/api/fluview.html",
+    "boundaries": "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html"
+  },
+  "files": [
+    {
+      "file": "census_county_fips_names.csv",
+      "bytes": 110440,
+      "sha256": "35cd19bff2d0a7784b30cc4752466ab85a8a1f27ba9042057c6164cfbba3f4b9"
+    },
+    {
+      "file": "fluview_ili_state_weekly_northeast.parquet",
+      "bytes": 149467,
+      "sha256": "7b977d7224f1a6b96db2f484a33cfe1258b9174176a7d76d92eab1d94bfe062a"
+    },
+    {
+      "file": "noaa_temp_county_monthly.parquet",
+      "bytes": 6793055,
+      "sha256": "e987b998765b7fa58f996ef49910fd35ea0e13dca0dafc1df902bde3eda61ba1"
+    },
+    {
+      "file": "nssp_edvisits_county_weekly_northeast.parquet",
+      "bytes": 154337,
+      "sha256": "62d858ebdc5c9bcd6dae3dcbfc7c587ce1e6d84185cadd87a70856a75efcd4f0"
+    },
+    {
+      "file": "nssp_edvisits_state_weekly.parquet",
+      "bytes": 59610,
+      "sha256": "61f282d8166dfaf15376846051efbc03808c24e7e67e58c3dd658469014411d6"
+    },
+    {
+      "file": "boundaries/cb_2020_us_county_20m.zip",
+      "bytes": 893148,
+      "sha256": "9394913edbd6f72791b06b84509e59ea2d275d10b73ae27ef87df3bdb061890c"
+    },
+    {
+      "file": "boundaries/cb_2020_us_state_20m.zip",
+      "bytes": 188558,
+      "sha256": "1d872779cbfa2c2bf828850664aa9593a35844205e2e4bed5aeb78affb8da050"
+    }
+  ],
+  "notes": {
+    "boundaries": "Census 2020 cartographic boundary zips, downloaded unchanged by src/fetch_census_boundaries.py on 2026-10-06."
+  }
+}
